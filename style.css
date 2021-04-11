@@ -18,6 +18,9 @@ body
     flex-wrap: wrap;
     text-align: center;
 }
+.container
+{
+    width: 100%;
 h1
 {
     margin: 20px 0px;
@@ -143,10 +146,25 @@ h3
     background: transparent;
     z-index: 100000;
 }
+@media(max-width: 1310px){
+    .container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
 @media(max-width: 865px){
     .container .video
     {
         width: 95%;
+        float: none;
+    }
+    .container .scrollBox
+    {
+        float: none;
     }
 }
 @media(max-width: 775px){
